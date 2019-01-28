@@ -1,0 +1,26 @@
+cjp:
+rootface, grooveangle1,grroveangle2,rootopening
+pjp:
+rootopening, grroveangle1, minrootface*
+flare:
+rootopening, minrootface*
+
+
+*get girdershape,material as of connmakersuperbase.
+*look shearplate connmakerIO for weldsrec
+*weldtypes - create getweldtypes specializations as of shearplategirderweld.cpp
+
+
+
+_weldTypedataPtr.reset(std::make_shared<weldTypedata<FILLET_FILLET>> weldTypedata(size1,size2));
+
+
+CJP:
+
+select * from welds where id = 10320192\G
+select * from aisc_v14_table_8_2_i_cjp where joint_designation = "TC-U4a-GF" AND root_opening = 0.25\G
+returns first record.
+
+select * from welds where id = 10320315\G
+select * from aisc_v14_table_8_2_i_cjp where joint_designation = "TC-U4a-GF" AND root_opening = 6\G
+returns first record.

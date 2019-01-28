@@ -1,0 +1,6 @@
+cjp:
+rootface, grooveangle1,grroveangle2,rootopening
+pjp:
+rootopening, grroveangle1, minrootface*
+flare:
+rootopening, minrootface*

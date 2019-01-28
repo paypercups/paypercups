@@ -1,0 +1,97 @@
+3(gdb) p dbShearPlateConnectionPtr->getShearPlateGirderWeld()
+34$1 = (const Qnect::Engineering::Common::ShearPlateConnectionBase<(Qnect::Database::Standard)1>::MyWeld &) @0x7fffe809c380: {<Qnect::Engineering::Co\
+  mmon::PartBase<(Qnect::Database::Standard)1>> = {<Qnect::Engineering::Common::StandardsObjectBase<(Qnect::Database::Standard)1>> = {<Qnect::Enginee\
+  ring::Common::StandardsObjectBaseImpl<(Qnect::Database::Standard)1, (Qnect::Database::UnitSystem)0>> = {_vptr.StandardsObjectBaseImpl = 0x17e357a0 \
+  <vtable for Qnect::Engineering::DBConnection::DBWeld<(Qnect::Database::Standard)1>+32>, static MyStandard_ = 
+  Qnect::Database::AISC_V14_LRFD}, <No data fields>}, 
+  _verticalReaction = 0, 
+  _axialReaction = 0,
+  _calcsOutPtr = std::shared_ptr (count 1, weak 0) 0x7fffe809dd80, _isInitialized = false}, \
+  _metal1Thickness = 0, 
+  _metal1Material = std::shared_ptr (count 1, weak 0) 0x7fffe809d420, 
+  _metal2Thickness = 0, 
+  _metal2Material = std::shared_ptr (\ count 1, weak 0) 0x7fffe800dae0, 
+  _arrangementPtr = std::shared_ptr (count 1, weak 0) 0x7fffe808d540, 
+  _weldFasteningType = {<Qnect::Engineering::Common::StandardsObjectBase<(Qnect::Database::Standard)1>> = {<Qnect::Engineering::Common::StandardsObjectBaseImpl<(Qnect::Database::Standard)1, (Qnec\
+  t::Database::UnitSystem)0>> = {_vptr.StandardsObjectBaseImpl = 0x17dac3f0 <vtable for Qnect::Engineering::Common::WeldFasteningType<(Qnect::Databas\
+  e::Standard)1>+16>,
+  static MyStandard_ = Qnect::Database::AISC_V14_LRFD}, <No data fields>},
+  _electrode = Qnect::Database::E70, _aisc_8_3_i = std::\
+  shared_ptr (count 55, weak 0) 0x1d866630, _basicType = Qnect::Engineering::Common::_FILLET_FILLET, 
+  _weldBasicTypeTypePairs = std::vector of length 1,
+  capacity 1 = {{first = Qnect::Database::FILLET, second = std::shared_ptr (count 2, weak 0) 0x7fffe8015530}}},
+  _weldingLocation = Qnect::Database::FIELD,
+  _supplementarySymbol2Opt = {_value = std::unique_ptr<Qnect::Database::WeldSupplementarySymbol> containing 0x0},
+  _supplementarySymbol3Opt =\
+   {_value = std::unique_ptr<Qnect::Database::WeldSupplementarySymbol> containing 0x0},
+   **_reaction = 0,
+   _theta = 0,
+   _eccentricity = 0,
+   _isWeldSizeInRange = true,
+   _weldStrength = -1,
+   _weldStrengthVerticalComponent = 6.9533359461699571e-310,
+   _weldStrengthAxialComponentOpt = {_value = std::unique_ptr<double> containing 0x0},
+   _filletWeldDmax = {_value = std::unique_ptr<double> containing 0x0},
+   _filletWeldDmaxCalcsOut = {_value = std::unique_ptr\
+  <std::basic_string<char, std::char_traits<char>, std::allocator<char> >> containing 0x0},
+  _nycCodeAxialForce4 = {_value = std::unique_ptr<double> containing 0x0},
+  _ibc1615322AxialTension = {_value = std::unique_ptr<double> containing 0x0},
+  _weldStrengthNycCode4 = {_value = std::unique_ptr<double> containing 0x0},
+  _weldStrengthIbcCode = {_value = std::unique_ptr<double> containing 0x0},
+  _weldTypeDataPtr = std::shared_ptr (count 1, weak 0) 0x7fffe8013250, 
+  hasOpposite = Qnect::Engineering::Common::HAS_NO_OPPOSITE,
+  _dmax1 = -1,
+  _dmax2 = -1,
+  _dmax3 = -1}
+
+
+35(gdb) p  shearPlateConnectionPtr->getShearPlateGirderWeld()
+36$2 = (const Qnect::Engineering::Common::ShearPlateConnectionBase<(Qnect::Database::Standard)1>::MyWeld &) @0x7fffe8041960: {<Qnect::Engineering::Co\
+  mmon::PartBase<(Qnect::Database::Standard)1>> = {<Qnect::Engineering::Common::StandardsObjectBase<(Qnect::Database::Standard)1>> = {<Qnect::Enginee\
+  ring::Common::StandardsObjectBaseImpl<(Qnect::Database::Standard)1,
+  (Qnect::Database::UnitSystem)0>> = {_vptr.StandardsObjectBaseImpl = 0x182d8720 \
+  <vtable for Qnect::Engineering::ShearPlate::ShearPlateGirderWeld<(Qnect::Database::Standard)1, (Qnect::Database::FramingCondition)1>+32>,
+  static My Standard_ = Qnect::Database::AISC_V14_LRFD}, <No data fields>},
+  ***_verticalReaction = 2,(0)
+  _axialReaction = 0,
+  _calcsOutPtr = std::shared_ptr (count 1,\ weak 0) 0x7fffe80360d0, _isInitialized = false},
+   ***_metal1Thickness = 0.5,(0)
+   _metal1Material = std::shared_ptr (count 10, weak 0) 0x7fffe80308c0,\
+   ***_metal2Thickness = 0.93999999999999995,(0)
+  _metal2Material = std::shared_ptr (count 10, weak 0) 0x7fffe8030830, _arrangementPtr = std::shared_ptr (count 1\
+  0, weak 0) 0x7fffe8030aa0,
+  _weldFasteningType = {<Qnect::Engineering::Common::StandardsObjectBase<(Qnect::Database::Standard)1>> = {<Qnect::Enginee\
+  ring::Common::StandardsObjectBaseImpl<(Qnect::Database::Standard)1,
+  (Qnect::Database::UnitSystem)0>> = {_vptr.StandardsObjectBaseImpl = 0x17dac3f0 \
+  <vtable for Qnect::Engineering::Common::WeldFasteningType<(Qnect::Database::Standard)1>+16>, 
+  static MyStandard_ = Qnect::Database::AISC_V14_LRFD}, \
+  <No data fields>},
+  _electrode = Qnect::Database::E70,
+  _aisc_8_3_i = std::shared_ptr (count 55, weak 0) 0x1d866630, _basicType = Qnect::Engineering:\
+  :Common::_FILLET_FILLET,
+  _weldBasicTypeTypePairs = std::vector of length 1,
+  capacity 1 = {{first = Qnect::Database::FILLET, second = std::shared_pt\
+  r (count 10, weak 0) 0x7fffe800dbe0}}},
+  _weldingLocation = Qnect::Database::SHOP,**
+  _supplementarySymbol2Opt = {_value = std::unique_ptr<Qnect::Datab\
+  ase::WeldSupplementarySymbol> containing 0x0},
+  _supplementarySymbol3Opt = {_value = std::unique_ptr<Qnect::Database::WeldSupplementarySymbol> conta\
+  ining 0x0},
+  **_reaction = 2,(0)
+  _theta = 0,
+  _eccentricity = 0,
+  _isWeldSizeInRange = true,
+  _weldStrength = -1,
+  *****_weldStrengthVerticalComponent = 111.37210233943973,  (6.95333946169957)
+
+  _weldStrengthAxialComponentOpt = {_value = std::unique_ptr<double> containing 0x0}, _filletWeldDmax = {_value = std::unique_ptr<double>containing 0x7fffe8030c20},
+  _filletWeldDmaxCalcsOut = {_value = std::unique_ptr<std::basic_string<char, std::char_traits<char>, std::allocator<char> >> containing 0x7fffe8022f90},
+  _nycCodeAxialForce4 = {_value = std::unique_ptr<double> containing 0x0},
+  _ibc1615322AxialTension = {_value = std::  unique_ptr<double> containing 0x0},
+  _weldStrengthNycCode4 = {_value = std::unique_ptr<double> containing 0x0},
+  _weldStrengthIbcCode = {_value = std::unique_ptr<double> containing 0x0},
+  *****_weldTypeDataPtr = std::shared_ptr (count 10, weak 0) 0x7fffe8030b20, (count1)
+  _hasOpposite = Qnect::Engineering::Common::HAS_NO_OPPOSITE,
+  ***_dmax1 = 0.32829957697946854,(-1)
+  ***_dmax2 = 1.2344064094428016,(-1)
+  ***_dmax3 = 0.75(-1)
