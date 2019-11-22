@@ -323,6 +323,7 @@ footer.footer .social-link {
   height: 4rem;
   width: 4rem;
   line-height: 4.3rem;
+  right: 20px;
   font-size: 1.5rem;
   background-color: #5a95f5;
   -webkit-transition: background-color 0.15s ease-in-out;
@@ -479,4 +480,8 @@ a:hover, a:focus, a:active {
   .map {
     height: 75vh;
   }
+}
+
+.bottomcenter {
+  left: 120px;
 }
