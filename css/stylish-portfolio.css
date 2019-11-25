@@ -481,3 +481,12 @@ a:hover, a:focus, a:active {
     height: 75vh;
   }
 }
+
+.locate {
+  padding-top: 4rem;
+}
+
+.back
+{
+  background-image: url("../img/collage.jpg");
+}
